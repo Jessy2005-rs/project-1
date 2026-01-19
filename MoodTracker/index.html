@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>How are you feeling today?</h2>
+
+  <select id="mood">
+    <option value="">Select Mood</option>
+    <option value="happy">😊 Happy</option>
+    <option value="sad">😔 Sad</option>
+    <option value="stressed">😫 Stressed</option>
+    <option value="calm">😌 Calm</option>
+  </select>
+
+  <br><br>
+  <button onclick="checkMood()">Submit</button>
+
+  <p id="message"></p>
+</div>
+
+<script>
+  function checkMood() {
+    let mood = document.getElementById("mood").value;
+    let message = "";
+
+    if (mood === "happy") {
+      message = "Keep smiling! Your happiness matters 😊";
+    } else if (mood === "sad") {
+      message = "It's okay to feel sad. Better days are coming 💙";
+    } else if (mood === "stressed") {
+      message = "Take a deep breath. You are stronger than you think 🌿";
+    } else if (mood === "calm") {
+      message = "Peace looks good on you ✨";
+    } else {
+      message = "Please select a mood.";
+    }
+
+    document.getElementById("message").innerText = message;
+  }
+</script>
+
+</body>
+</html>
