@@ -1,0 +1,64 @@
+/* Full page background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+
+  background-image: url("https://www.istockphoto.com/photos/guess-number");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input box */
+.container input {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.container button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #45a049;
+}
+
+/* Result text */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
