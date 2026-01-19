@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Women Safety App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Women Safety SOS</h2>
+
+  <button onclick="sendSOS()">🚨 SOS</button>
+
+  <p id="alert"></p>
+</div>
+
+<script>
+  function sendSOS() {
+    document.getElementById("alert").innerText =
+      "🚨 Emergency Alert Sent! Stay Safe.";
+  }
+</script>
+
+</body>
+</html>
