@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pregnancy Mood Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>How are you feeling today?</h2>
+
+  <select id="mood">
+    <option value="">Select Mood</option>
+    <option value="happy">😊 Happy</option>
+    <option value="anxious">😟 Anxious</option>
+    <option value="tired">😴 Tired</option>
+    <option value="emotional">🥺 Emotional</option>
+  </select>
+
+  <br><br>
+  <button onclick="showMessage()">Get Support</button>
+
+  <p id="message"></p>
+</div>
+
+<script>
+  function showMessage() {
+    let mood = document.getElementById("mood").value;
+    let msg = "";
+
+    if (mood === "happy") {
+      msg = "That’s wonderful! Enjoy this beautiful moment 🤍";
+    } else if (mood === "anxious") {
+      msg = "It’s okay to feel anxious. Take slow breaths — you are safe 🌿";
+    } else if (mood === "tired") {
+      msg = "Please rest when you can. Your body is doing amazing work 💕";
+    } else if (mood === "emotional") {
+      msg = "Your feelings are valid. You are strong and loved 💖";
+    } else {
+      msg = "Please select a mood to continue.";
+    }
+
+    document.getElementById("message").innerText = msg;
+  }
+</script>
+
+</body>
+</html>
